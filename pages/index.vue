@@ -1,9 +1,19 @@
 <template>
-  <Tutorial />
+  <div>
+    FAQ
+    <button type="button" @click="goCreate">faq</button>
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'IndexPage'
+  name: 'Index',
+  methods: {
+    goCreate () {
+      this.$router.push({
+        name: 'faq'
+      })
+    }
+  }
 }
 </script>
